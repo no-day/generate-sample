@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import { YourComponent } from "./Sketch";
 import * as G from "@no-day/fp-ts-generators";
 
@@ -18,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       Seed: <input type="text" onChange={handleChange} value={seed} />
       <button onClick={handleClick}>Random Seed!</button>
       <YourComponent seed={seed} />
